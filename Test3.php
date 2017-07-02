@@ -83,23 +83,6 @@ if(isset($_POST["submit"])) {
      move_uploaded_file($_FILES["img"]["tmp_name"],"$dest".$filename);
 
 
-/*
-        $src = $_FILES["img"]["tmp_name"];
-    $dest = opendir('C:\xampp\htdocs\deep\photos');
-    while($readFile = readdir($src)){
-            if($readFile != '.' && $readFile != '..'){
-                 if(!file_exists($readFile)){
-                if(copy($src.$readFile, $dest.$readFile)){
-                echo "Copy file";
-            }else{
-                    echo "Canot Copy file";
-                }
-                   }
-            }
-        }
-
-
-*/
 
 
 
@@ -112,7 +95,7 @@ if(isset($_POST["submit"])) {
 
 $conn->close();
 
-  echo "Your add has been submited, you will be redirected to your account page in 3 seconds....";
+  echo "Image is uploaded.";
   
 
 	
